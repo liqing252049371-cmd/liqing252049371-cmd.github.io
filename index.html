@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国庆闽粤路书 · 2026.10.1–10.7</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif; background:#faf6ef; color:#2b2b2b; font-size:17px; line-height:1.75; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 14px 80px; }
+
+  /* 封面 */
+  .cover { min-height:92vh; background:linear-gradient(160deg,#8e2f24 0%,#c1443c 45%,#e08a4b 100%); color:#fff; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:40px 24px; position:relative; overflow:hidden; }
+  .cover::before { content:""; position:absolute; inset:14px; border:1px solid rgba(255,255,255,.35); border-radius:18px; pointer-events:none; }
+  .cover .kicker { font-size:13px; letter-spacing:6px; opacity:.85; }
+  .cover h1 { font-size:44px; letter-spacing:6px; margin:18px 0 6px; font-weight:800; }
+  .cover .sub { font-size:17px; letter-spacing:2px; opacity:.95; }
+  .cover .cities { margin-top:26px; font-size:15px; letter-spacing:1px; opacity:.9; line-height:2; }
+  .cover .meta2 { margin-top:30px; font-size:14px; opacity:.85; }
+  .cover .seal { margin-top:34px; border:1.5px solid rgba(255,255,255,.7); border-radius:8px; padding:5px 14px; font-size:13px; letter-spacing:3px; }
+
+  /* 封底 */
+  .backcover { min-height:60vh; background:linear-gradient(160deg,#8e2f24,#c1443c); color:#fff; border-radius:18px; margin-top:40px; padding:44px 26px; text-align:center; }
+  .backcover h2 { font-size:26px; letter-spacing:4px; margin-bottom:14px; }
+  .backcover p { font-size:14px; opacity:.92; line-height:2; }
+
+  nav { position:sticky; top:0; z-index:50; background:#faf6efee; backdrop-filter:blur(6px); padding:10px 0; border-bottom:1px solid #e5dccb; display:flex; gap:8px; overflow-x:auto; }
+  nav a { flex:0 0 auto; padding:7px 13px; border-radius:20px; background:#fff; border:1px solid #ddd0b8; color:#7a5c2e; text-decoration:none; font-size:15px; white-space:nowrap; }
+  h2.day { font-size:21px; color:#a03528; margin:34px 0 4px; padding-left:10px; border-left:5px solid #c1443c; }
+  .daysub { color:#8a7a5c; font-size:14px; margin:0 0 14px 15px; }
+  .card { background:#fff; border:1px solid #e8dfc9; border-radius:14px; padding:14px 16px; margin:12px 0; box-shadow:0 1px 3px rgba(120,90,40,.06); }
+  .card h3 { font-size:17px; color:#5a4218; margin-bottom:6px; }
+  .time { display:inline-block; background:#c1443c; color:#fff; font-size:13px; padding:1px 9px; border-radius:10px; margin-right:6px; }
+  .opt { border-top:1px dashed #e2d7bd; padding:9px 0 4px; }
+  .opt:first-of-type { border-top:none; }
+  .opt b { font-size:16px; }
+  .badge { display:inline-block; font-size:12px; padding:0 7px; border-radius:8px; margin-left:6px; vertical-align:2px; }
+  .ok { background:#e2f2e4; color:#2e7d32; }
+  .warn { background:#fdf1dc; color:#b26a00; }
+  .no { background:#fbe4e2; color:#c62828; }
+  .meta { font-size:14px; color:#6d604a; }
+  .src { font-size:13px; margin-top:3px; }
+  .src a { color:#7a5c2e; word-break:break-all; }
+  .tip { background:#fff8e6; border:1px solid #f0dfae; border-radius:12px; padding:11px 14px; margin:12px 0; font-size:15px; }
+  .tip b { color:#a03528; }
+  .danger { background:#fdecea; border:1px solid #f2c1bb; }
+  .pic { margin:10px 0; }
+  .pic img { width:100%; border-radius:12px; display:block; }
+  .piccap { font-size:12px; color:#a8977a; text-align:center; margin-top:3px; }
+  .story { background:#f7efe0; border-left:3px solid #c9a227; border-radius:0 10px 10px 0; padding:9px 12px; font-size:14px; color:#5a4a26; margin:8px 0; }
+  .story b { color:#8e6b1a; }
+
+  /* 动线图 */
+  .route { display:flex; align-items:center; gap:0; overflow-x:auto; padding:12px 4px; margin:6px 0 2px; }
+  .rnode { flex:0 0 auto; display:flex; flex-direction:column; align-items:center; width:86px; text-align:center; }
+  .rdot { width:26px; height:26px; border-radius:50%; background:#c1443c; color:#fff; font-size:13px; display:flex; align-items:center; justify-content:center; font-weight:700; }
+  .rnode span { font-size:12px; color:#6d604a; margin-top:4px; line-height:1.3; }
+  .rarrow { flex:0 0 auto; color:#c9a227; font-size:16px; padding:0 2px; transform:translateY(-10px); }
+
+  ul { padding-left:22px; }
+  li { margin:3px 0; }
+  table { width:100%; border-collapse:collapse; font-size:14px; background:#fff; border-radius:10px; overflow:hidden; }
+  th,td { border:1px solid #e8dfc9; padding:7px 8px; text-align:left; }
+  th { background:#f3ead3; color:#5a4218; }
+  .foot { text-align:center; color:#a8977a; font-size:13px; margin-top:40px; }
+</style>
+</head>
+<body>
+
+<!-- ============ 封面 ============ -->
+<section class="cover" id="cover">
+  <div class="kicker">二〇二六 · 国庆特辑</div>
+  <h1>国庆闽粤路书</h1>
+  <div class="sub">八人三代 · 两台车 · 七天六晚</div>
+  <div class="cities">福州 ｜ 泉州 ｜ 东山岛 ｜ 潮州 ｜ 南澳岛 ｜ 汕头<br>2026 年 10 月 1 日 — 10 月 7 日</div>
+  <div class="meta2">每餐三选一 · 五角色审核 · 来源可核实 · 已配天气与景点图</div>
+  <div class="seal">家 庭 旅 行 专 刊</div>
+</section>
+
+<div class="wrap">
+
+<nav>
+  <a href="#overview">总览</a>
+  <a href="#weather">天气</a>
+  <a href="#d1">D1 福州</a>
+  <a href="#d2">D2 福州→泉州</a>
+  <a href="#d3">D3 泉州</a>
+  <a href="#d4">D4 泉州→东山</a>
+  <a href="#d5">D5 东山→潮州</a>
+  <a href="#d6">D6 南澳岛</a>
+  <a href="#d7">D7 汕头→家</a>
+  <a href="#todo">订座清单</a>
+  <a href="#save">省钱</a>
+  <a href="#typhoon">台风预案</a>
+</nav>
+
+<!-- ============ 总览 ============ -->
+<h2 class="day" id="overview">行程总览</h2>
+<p class="daysub">一张表看全程</p>
+
+<div class="card">
+<h3>全程动线</h3>
+<div class="route">
+  <div class="rnode"><div class="rdot">①</div><span>衡阳<br>10/1 出发</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">②</div><span>长沙✈福州<br>17:10 落地</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">③</div><span>泉州<br>住 2 晚</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">④</div><span>东山岛<br>住 1 晚</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑤</div><span>潮州<br>住 1 晚</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑥</div><span>南澳岛<br>住 1 晚</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑦</div><span>汕头🚄<br>14:03 回家</span></div>
+</div>
+</div>
+
+<table>
+  <tr><th>日期</th><th>路线</th><th>住哪</th><th>关键动作</th></tr>
+  <tr><td>10/1 周四</td><td>衡阳→长沙飞福州 17:10 落地</td><td>福州·卓悦酒店（达道路 119 号）</td><td>提车→上下杭晚餐+夜游</td></tr>
+  <tr><td>10/2 周五</td><td>福州→泉州 180km/2.5h</td><td>泉州·海和蓝美宿（古榕巷 9 号）</td><td>上午三坊七巷，晚古城夜游</td></tr>
+  <tr><td>10/3 周六</td><td>泉州古城全天（车不动）</td><td>同上</td><td>开元寺+寺庙线+晚上南音专场</td></tr>
+  <tr><td>10/4 周日</td><td>泉州博物馆→东山岛 250km/3.5h</td><td>东山·Retro 民宿（铜陵镇顶街）</td><td>9 点进博物馆，10:15 出发</td></tr>
+  <tr><td>10/5 周一</td><td>东山岛→潮州 180km/2.5h</td><td>潮州·耀和别院（牌坊街石牌巷）</td><td>苏峰山赶早，广济桥灯光秀</td></tr>
+  <tr><td>10/6 周二</td><td>潮州→南澳岛 70km/1.5h+核验</td><td>南澳·玉珑湾 5 栋 1507</td><td>7:30 出发，莱芜湾核验入岛</td></tr>
+  <tr><td>10/7 周三</td><td>南澳→汕头老城→汕头站 G6309 14:03</td><td>家</td><td>7:30 前出岛，汕头玩半天再进站</td></tr>
+</table>
+
+<div class="tip danger"><b>两件 10/1 提车当天必须办的事：</b><br>
+① 拿到两台车车牌后，立刻在「南澳畅行」微信小程序预约 <b>10/6 上午</b>入岛名额（两台车=两个名额）；<br>
+② 打福州卓悦酒店前台 <b>18050302909</b> 确认两台车停车位。</div>
+
+<div class="tip"><b>节奏说明：</b>每天午后都留了午休或轻松段（10/1–10/4 午后仍有 30–32℃），逛累随时可回住处休息，也可以继续逛——每个点都标了"可略"，按当天状态灵活来。10/5 起冷空气降温 4–6℃，备一件薄外套。</div>
+
+<div class="tip"><b>老人优惠证件带齐：</b>4 位老人身份证（风动石/广济桥 60+ 免票或半价、总兵府金银岛半价）、13 岁孩子学生证、7 岁孩子量身高（1.2m 以下多景点免票）。全程门票能省约 300–400 元。</div>
+
+<!-- ============ 天气 ============ -->
+<h2 class="day" id="weather">🌦 全程天气速览</h2>
+<p class="daysub">中央气象台/中国天气网 2026-09-29 18:00 更新 · 出发前 3 天再复核</p>
+<div class="card">
+<table>
+<tr><th>日期</th><th>地点</th><th>天气</th><th>气温</th><th>影响与应对</th></tr>
+<tr><td>10/1</td><td>福州</td><td>多云转小雨</td><td>32/25℃</td><td>不影响室内+夜游，带伞</td></tr>
+<tr><td>10/2</td><td>福州→泉州</td><td>多云转阴</td><td>31/25℃</td><td>好天，赶路日顺利</td></tr>
+<tr><td>10/3</td><td>泉州</td><td>多云</td><td>30/25℃</td><td>全天最好的一天；午后仍热，午休别省</td></tr>
+<tr><td>10/4</td><td>泉州→东山岛</td><td>小雨</td><td>31/23℃</td><td>⚠️ 上午博物馆在室内正好躲雨；开车留足余量</td></tr>
+<tr><td>10/5</td><td>东山→潮州</td><td>雷阵雨转多云</td><td>28/23℃</td><td>⚠️ 降温 4–6℃加外套；苏峰山若早上下雨就砍掉</td></tr>
+<tr><td>10/6</td><td>南澳岛</td><td>多云为主</td><td>约 27/23℃</td><td>转好，进岛日顺利</td></tr>
+<tr><td>10/7</td><td>南澳→汕头</td><td>多云</td><td>约 27/23℃</td><td>返程日顺利</td></tr>
+</table>
+<div class="src">出处：<a href="https://www.weather.com.cn/weather/101230501.shtml">中国天气网·泉州</a> · <a href="https://www.weather.com.cn/weather/101280504.shtml">中国天气网·汕头</a> · <a href="http://www.nmc.cn/publish/forecast/AGD/nanao.html">中央气象台·南澳</a>。10/6–10/7 超出 7 天预报精度，出发前复核。台风动向：目前洋面台风趋向日本减弱，假期暂无影响闽粤的台风信号，10/4 起每天看一次（见文末台风预案）。</div>
+</div>
+
+<!-- ============ D1 ============ -->
+<h2 class="day" id="d1">D1 · 10/1（周四）福州</h2>
+<p class="daysub">落地提车 → 上下杭晚餐 → 街区夜景</p>
+
+<div class="card"><h3>当日动线</h3><div class="route">
+  <div class="rnode"><div class="rdot">①</div><span>长乐机场<br>17:10 落地</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">②</div><span>提车进市区<br>约 90 分钟</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">③</div><span>卓悦酒店<br>入住</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">④</div><span>上下杭<br>晚餐+夜游</span></div>
+</div></div>
+
+<div class="pic"><img src="images/shangxiahang.jpg" alt="福州上下杭历史文化街区"><div class="piccap">上下杭历史文化街区（图：Wikimedia Commons）</div></div>
+<div class="story"><b>📖 上下杭是什么：</b>闽商发祥地之一，百年前福州的商贸金融中心，会馆、商行、钱庄林立，三捷河穿街而过，三通桥、星安桥都是乾隆年间的古桥。如今修缮成历史街区，红灯笼一亮，是福州夜里最有味道的老街。</div>
+
+<div class="card">
+<h3>时间轴</h3>
+<ul>
+<li><span class="time">15:10</span>长沙起飞 → <span class="time">17:10</span>福州长乐落地</li>
+<li><span class="time">18:00</span>前提车完毕（机场内提车）</li>
+<li><span class="time">18:00–19:30</span>机场高速 S1531 进市区，国庆傍晚按 90 分钟留量，导航开"避开拥堵"</li>
+<li><span class="time">19:30</span>卓悦酒店（台江区达道路 119 号电建大厦 B 座）入住放行李</li>
+<li><span class="time">19:45</span>步行约 10 分钟进上下杭晚餐</li>
+<li><span class="time">21:00</span>饭后夜游：三通桥（红灯笼倒映河面，核心拍照位）→ 星安桥 → 金银里灯笼巷，约 1–1.5 小时石板平路；逛累随时回酒店（就在旁边）</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🍽 晚餐 · 三选一（务必 9 月 28 日前电话订座）</h3>
+<div class="opt"><b>① 王庄阿咪·海鲜大排档（上下杭店）</b><span class="badge ok">✅ 预算内首选</span>
+<div class="meta">三通桥下巷 14-34 号 · 人均约 100 · 8 人约 800+ · 两层楼有大桌<br>招牌：海鲜佛跳墙、荔枝肉、南煎肝、红鲟饭 · 订座 0591-83385888</div>
+<div class="src">出处：<a href="https://you.ctrip.com/food/164/21712116.html">携程页（人均/排队实况）</a> · <a href="https://www.dealmoon.com/post/759321">游客三刷实付 800+</a></div></div>
+<div class="opt"><b>② 山海南筵·闽南宴</b><span class="badge warn">⚠️ 若认出是它就吃这顿大餐</span>
+<div class="meta">隆平路永德会馆隔壁（上下杭核心）· 米其林必比登推介 · 人均约 260 · 8 人约 2000<br>招牌：永春白鸭汤、海鲜沙茶锅、姜母鸭 · 订包厢 0591-83837333（包厢不能用团购）<br>注意：是闽南菜不是福州菜，想找荔枝肉佛跳墙味就选①</div>
+<div class="src">出处：<a href="https://guide.michelin.com/sg/zh_CN/fujian-province/fuzhou_1026814/restaurant/shan-hai-nan-yan">米其林官网页</a> · <a href="https://gs.ctrip.com/html5/you/foods/fooddetail/164/133541623.html">携程页</a></div></div>
+<div class="opt"><b>③ 闽府佳宴（上下杭店）</b><span class="badge warn">⚠️ 安静保底（评价样本少）</span>
+<div class="meta">隆平路 117 号独栋三层 · 人均约 80 · 有包厢 · 订座 18597771918</div>
+<div class="src">出处：<a href="https://you.ctrip.com/food/164/90681116.html">携程页</a></div></div>
+</div>
+
+<div class="tip"><b>机动项：</b>闽江夜游 128 元/人（船稳有座），晚餐结束早就买 21:20 班次；否则江边散步即可。<a href="http://fz.bendibao.com/tour/2020930/55124.shtm">班次票价出处</a></div>
+
+<!-- ============ D2 ============ -->
+<h2 class="day" id="d2">D2 · 10/2（周五）福州 → 泉州</h2>
+<p class="daysub">上午三坊七巷 → 14:30 前出发奔泉州 → 晚上古城夜游（不逛西街，留给明天白天）</p>
+
+<div class="card"><h3>当日动线</h3><div class="route">
+  <div class="rnode"><div class="rdot">①</div><span>8:00 出发<br>三坊七巷</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">②</div><span>11:30 午餐<br>吉庇巷</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">③</div><span>12:45 上高速<br>G15 去泉州</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">④</div><span>16:00 入住<br>古榕巷民宿</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑤</div><span>17:45 晚餐</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑥</div><span>中山路夜游<br>22:30 回</span></div>
+</div></div>
+
+<div class="pic"><img src="images/sanfang_qixiang.jpg" alt="三坊七巷南后街"><div class="piccap">三坊七巷·南后街（图：Wikimedia Commons）</div></div>
+<div class="story"><b>📖 三坊七巷是什么：</b>中国现存规模最大的明清里坊建筑群，"里坊制度活化石"。一条街巷走出林则徐、严复、林觉民、冰心——近代半部思想史都住过这几条巷子。</div>
+
+<div class="card">
+<h3>时间轴（白天）</h3>
+<ul>
+<li><span class="time">8:00</span>酒店出发（开两台车），15 分钟到三坊七巷</li>
+<li><span class="time">8:15</span>停<b>营房里地下停车场</b>（约 130 位，林则徐纪念馆旁，走到南后街南口 5 分钟）；满了去林则徐小学地库；兜底东百 C 馆（696 位）。注意吉庇路是单行道，从道山路→澳门路方向进。<a href="https://www.gl.gov.cn/xjwz/rw/glxl/202608/t20260813_5358505.htm">鼓楼区政府停车宝典</a></li>
+<li><span class="time">8:30–11:30</span>南入口进 → <b>林则徐纪念馆</b>（免费）→ 南后街 → <b>林觉民·冰心故居</b>（免费）→ <b>水榭戏台</b>（20 元，60+ 半价，唯一水上古戏台）。收费小院落全略，每 40 分钟找茶馆歇脚</li>
+<li><span class="time">11:30</span>午餐（见下）→ <span class="time">12:45</span>取车出发 → 则徐大道 → <b>福州收费站</b>上 G15 沈海（避开福州南/祥谦易堵口）→ 约 147km，中途别停莆田东进服务区</li>
+<li><span class="time">15:45–16:15</span>到泉州，车停<b>开元盛世广场地下停车场</b>（约 10 元/天，步行到民宿 10 分钟；爆满转源和 1916 园区）</li>
+<li><span class="time">16:45</span>步行进古榕巷办入住（巷子窄车进不去，行李拖 300–500 米，老人孩子空手走）</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🍽 午餐 11:30 · 三选一（提前 1–2 天订座）</h3>
+<div class="opt"><b>① 老福洲徐记（吉庇巷 70 号）</b><span class="badge ok">✅ 正餐首选</span>
+<div class="meta">就在停车区旁 · 人均 80–100 · 8 人约 700–850 · 佛跳墙、荔枝肉、醉排骨<br>订座 0591-87736189 / 18150036189；大众点评有"每天限额双人餐券"，当天早抢</div>
+<div class="src">出处：<a href="https://you.ctrip.com/food/164/121705726.html">携程页</a> · <a href="https://view.inews.qq.com/a/20260420A0805G00">腾讯实测"排队也要吃"</a></div></div>
+<div class="opt"><b>② 老福洲·福宴（吉庇路东百停车场出口）</b><span class="badge warn">⚠️ 包厢最稳但来源单一</span>
+<div class="meta">同品牌宴请线，有 16 人大桌包厢，佛跳墙 159 元/坛 · 订座打上面同一电话问</div>
+<div class="src">出处：<a href="https://new.qq.com/rain/a/LNK2024093000806400">2024 国庆指南"一定要提前预定"</a></div></div>
+<div class="opt"><b>③ 小吃线：同利肉燕 → 后街捞化 → 永和鱼丸浅尝</b><span class="badge ok">✅ 灵活备选</span>
+<div class="meta">南后街 106 号同利（中华老字号）→ 衣锦坊后街捞化（米其林指南在册）→ 永和鱼丸买一碗分着尝即可。8 人合计 400–600</div>
+<div class="src">出处：<a href="https://zhuanlan.zhihu.com/p/1902293638056216086">知乎本地人清单</a> · <a href="https://guide.michelin.com/sg/zh_CN/fujian-province/fuzhou_1026814/restaurants">米其林在册名单</a></div></div>
+</div>
+
+<div class="card">
+<h3>🍽 晚餐 17:45 · 三选一</h3>
+<div class="opt"><b>① 八芳林·泉州菜馆（西街会通巷 59-1）</b><span class="badge ok">✅ 首选</span>
+<div class="meta">步行 6–8 分钟 · 人均约 76 · 8 人约 600–650 · 老泉州三鲜、炸醋肉、海蛎煎、姜母鸭一家吃齐</div>
+<div class="src">出处：<a href="https://you.ctrip.com/food/243/136393026.html">携程 329 条 5 分</a> · <a href="https://www.xiaohongshu.com/discovery/item/64886be500000000130026fa">小红书实地笔记</a></div></div>
+<div class="opt"><b>② 东兴牛肉店（庄府巷 13 号）</b><span class="badge ok">✅ 快手备选</span>
+<div class="meta">人均 36 · 牛排、牛肉羹、干拌面 · 8 人约 300</div>
+<div class="src">出处：<a href="https://www.lifeweek.com.cn/h5/article/detail.do?artId=219209">三联周刊（本地人认可）</a></div></div>
+<div class="opt"><b>③ 鲤舟记·百年古厝泉州菜（西街店）</b><span class="badge ok">✅ 也可今晚吃</span>
+<div class="meta">人均 65–87 · 百年红砖古厝、明档厨房 · 若今晚吃，10/3 晚餐就换八芳林，两家都尝到</div>
+<div class="src">出处：<a href="https://m.dianping.com/dishes/list/c129d10084078">大众点评海蛎煎人气第 1</a></div></div>
+</div>
+
+<div class="card">
+<h3>🌙 晚上 19:30–22:30 夜游动线（西街留给明天白天，今晚走这条）</h3>
+<ul>
+<li>民宿出发 → <b>象峰巷/三朝巷</b>：巷口仰拍<b>东西塔夜景剪影</b>（10 分钟）</li>
+<li>→ <b>钟楼</b>：罗马式老钟楼亮灯打卡</li>
+<li>→ 沿<b>中山中路</b>南行：国庆 10:00–23:00 禁车纯步行街，南洋骑楼有专门夜景照明，看"五脚基"廊柱</li>
+<li>→ <b>府文庙广场</b>：国庆戏剧周主场地，每晚有免费惠民展演（南音/木偶/梨园戏轮演），碰上就看一会儿</li>
+<li>→ 拐<b>金鱼巷</b>：文创小街，南音阁周五晚惯例有公益南音（随进随出）</li>
+<li>→ 中山路北返，<b>22:30 前回民宿</b>。全程平路约 3km，累了随时打车回（起步价）</li>
+</ul>
+<div class="src">出处：<a href="https://www.qzlc.gov.cn/xxgk/gzdt/lcxw/202609/t20260920_3329306.htm">鲤城区政府（戏剧周主场地）</a> · <a href="http://www.news.cn/20250109/1687270397334d6dad26c69c5fbd0c5d/c.html">新华社（中山路骑楼夜景）</a></div>
+</div>
+
+<!-- ============ D3 ============ -->
+<h2 class="day" id="d3">D3 · 10/3（周六）泉州古城全天 · 主目的地深度日</h2>
+<p class="daysub">车不动 · 上午开元寺+西街 · 下午寺庙线（武庙/清真寺/天后宫）· 晚上南音</p>
+
+<div class="card"><h3>当日动线</h3><div class="route">
+  <div class="rnode"><div class="rdot">①</div><span>7:00 早餐<br>面线糊</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">②</div><span>8:00 开元寺<br>+古船馆</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">③</div><span>西街小吃<br>钟楼</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">④</div><span>12:00 午餐</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑤</div><span>午休至 15:00</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑥</div><span>小白车寺庙线<br>关岳庙/清净寺</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑦</div><span>18:00 晚餐</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑧</div><span>19:00 南音<br>专场</span></div>
+</div></div>
+
+<div class="pic"><img src="images/kaiyuan_si_quanzhou.jpg" alt="泉州开元寺仁寿塔"><div class="piccap">开元寺·仁寿塔（西塔）（图：Wikimedia Commons）</div></div>
+<div class="story"><b>📖 开元寺：</b>始建于唐垂拱二年（686 年），是宋元时期泉州"东方第一大港"的佛门中心。东西双塔是南宋花岗岩仿木构石塔（东塔高 48.27 米、西塔 44.06 米），<b>中国现存最高的一对石塔</b>，经历 1604 年八级大地震不倒，成了泉州的城市标志。寺内的<b>泉州湾古船陈列馆</b>（9:00–17:30）陈列着宋代远洋商船实物——"宋元大港"的故事在这里能看到真东西，逛寺时顺带进馆。</div>
+
+<div class="card">
+<h3>🍽 早餐 7:00 · 三选一（店小，8 人拆两队）</h3>
+<div class="opt"><b>① 曾氏老记面线糊（西街 17 号）</b><span class="badge ok">✅ 最近</span><div class="meta">民宿步行 3 分钟 · 人均 21 · 6:00 开门 · "醋肉+大肠+油条"本地公式</div>
+<div class="src">出处：<a href="http://m.visitqz.com/meishi/19.html">泉州旅游网</a> · <a href="https://post.smzdm.com/p/a2q9dlw7">什么值得买</a></div></div>
+<div class="opt"><b>② 水门国仔面线糊（水门巷老店）</b><span class="badge ok">✅ 本地人更多</span><div class="meta">步行约 12 分钟 · 人均 20–25 · 中华老字号 · 门牌 19 号/21 号两说，巷子很短到现场即见</div>
+<div class="src">出处：<a href="https://quanzhou.gov.cn/gastronomy/ch/msjy/fypx/202501/t20250104_3126950.htm">市政府美食官网</a></div></div>
+<div class="opt"><b>③ 民宿周边早点摊灵活解决</b><span class="badge ok">✅</span></div>
+</div>
+
+<div class="card">
+<h3>上午 8:00–11:30 · 开元寺+西街</h3>
+<ul>
+<li><b>开元寺务必 8:00 前入寺</b>（免费免预约，6:30–17:15；2025 国庆接待 31 万人次，晚了全是人）——东西塔、大雄宝殿、甘露戒坛，<b>9:00 顺带逛寺内古船陈列馆</b> <a href="https://www.quanzhou.gov.cn/hdzsk/wlj/202402/t20240204_3003001.htm">官方免预约答复</a></li>
+<li>逛完开元寺后，可回民宿休息，也可以继续逛西街</li>
+<li>西街小吃动线东行：<b>亚佛润饼</b>（165 号，非遗老店）→ <b>康庄满煎糕</b>（裴巷）→ 五叔公土笋冻（先买一份分尝，孩子可能怕虫子原料）→ 钟楼打卡。吴氏麻糍可略（差评"排队长、太一般"）</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🍽 午餐 12:00 · 三选一</h3>
+<div class="opt"><b>① 侯阿婆肉粽（东街 59 号，工行斜对面，钟楼东 50 米）</b><span class="badge ok">✅</span><div class="meta">人均 24 · 烧肉粽+肉燕汤，点普通款就行（鲍鱼粽不值）</div>
+<div class="src">出处：<a href="https://www.amap.com/ranking/quanzhou/food/350502">高德状元榜 4.73</a> · <a href="https://m.mafengwo.cn/poi/5310295.html">地址已复核</a></div></div>
+<div class="opt"><b>② 好成财牛排馆（涂门街 221 号，清净寺正对面）</b><span class="badge ok">✅ 下午动线最顺</span><div class="meta">人均 36 · 《舌尖 2》牛排+咸饭 · 咖喱味偏重，孩子少吃辣</div>
+<div class="src">出处：<a href="https://mpre.lifeweek.com.cn/h5/article/detail.do?artId=240152">三联周刊深度报道</a></div></div>
+<div class="opt"><b>③ 西街小吃线直接吃到饱</b><span class="badge ok">✅</span><div class="meta">上午没扫完的摊继续</div></div>
+</div>
+
+<div class="card">
+<h3>下午 15:00–17:45 · 寺庙线（小白车包车串点，100 元/小时装 8 人）</h3>
+<div class="pic"><img src="images/qingjing_si.jpg" alt="泉州清净寺"><div class="piccap">清净寺（图：Wikimedia Commons）</div></div>
+<div class="pic"><img src="images/guanyue_miao.jpg" alt="泉州通淮关岳庙"><div class="piccap">通淮关岳庙（武庙）（图：Wikimedia Commons）</div></div>
+<ul>
+<li>13:00–15:00 午休（天热，都回民宿歇口气）</li>
+<li><b>承天寺</b>（免费，8:00–17:30）——南唐 957 年建寺，与开元寺、崇福寺并称"泉州三大丛林"，清幽人少，40 分钟。体力不够就挪到 10/4 早上补</li>
+<li><b>通淮关岳庙</b>（=武庙=关帝庙，免费，6:00–18:00）——宋代始建主祀关羽，1914 年增祀岳飞合称"关岳"，福建现存最大武庙、台湾 600 多座关帝庙的祖庭，泉州香火最旺的庙之一，看闽南人"拜拜"的盛况，30 分钟</li>
+<li><b>清净寺（清真寺）</b>（门票 3 元，8:00–17:30）——关岳庙隔壁，北宋 1009 年阿拉伯穆斯林所建、仿大马士革礼拜堂形制，<b>中国现存最古老的伊斯兰教寺</b>，海上丝绸之路的实物见证，20 分钟</li>
+<li><b>天后宫</b>（免费，7:00–17:00）——南宋 1196 年始建，海内外现存年代最早、规格最高的妈祖庙，妈祖信仰正是随泉州港的船队传遍四海；门口德济门遗址广场拍照，30 分钟，秉正堂四果汤收尾</li>
+<li>⚠️ 注意：18:00–19:00 府文庙广场有"青狮踩街+闽台木偶专场"免费街秀，与 19:00 南音撞车——想看就提前 17:45 离场去文庙看开场 20 分钟，再打车去南音艺苑；不看就直接晚餐</li>
+</ul>
+<div class="meta" style="margin-top:6px"><b>取舍说明（已审核）：</b>府文庙你们去过了，本行程不再安排入庙，仅广场展演顺路碰；海交馆/非遗馆在古城外须预约，精华已由开元寺古船馆+10/4 上午泉州博物馆覆盖；南少林/洛阳桥太远耗腿，放弃；金鱼巷/花巷等出入民宿即路过，顺路看。洛阳桥（北宋蔡襄主持建造、四大古桥之一）在泉州东北 13km，与东山岛方向相反，不顺路、不专程去，知道有这座桥即可。</div>
+</div>
+
+<div class="card">
+<h3>🍽 晚餐 18:00 · 三选一</h3>
+<div class="opt"><b>① 鲤舟记·百年古厝泉州菜（西街后半段）</b><span class="badge ok">✅ 首选</span><div class="meta">人均 65–87 · 古厝独栋适合全家 · 姜母鸭、海蛎煎 · 17:30 前到或电话订</div>
+<div class="src">出处：<a href="https://hk.trip.com/restaurant/china/quanzhou/detail/li-zhou-148930960/">Trip 5 分</a> · <a href="https://travelnews.qunar.com/ugc/quanzhou-8-local-food-budget">去哪儿游记</a></div></div>
+<div class="opt"><b>② 八芳林</b><span class="badge ok">✅</span><div class="meta">昨晚没吃成今晚补</div></div>
+<div class="opt"><b>③ 建来发饭店</b><span class="badge warn">⚠️ 先电话核实</span><div class="meta">携程显示"商户已下线"，出发前打 0595-22286285 确认营业</div></div>
+</div>
+
+<div class="card">
+<h3>🎵 晚上 19:00 南音专场（本次重点，已官宣）</h3>
+<ul>
+<li><b>《南音"偶"遇》南音×木偶跨界专场</b>，南音艺苑（新门街芳草园旁，离民宿 1.2km，小白车可达）</li>
+<li>10/1–10/6 每天 4 场，选 <b>19:00 场</b>，约 70 分钟，20:10 散场</li>
+<li><b>买票：109 档 ×8 = 872 元最省</b>（双人套票 239 折 119.5/人反而贵）；每笔限 6 张，8 人拆 2 单；猫眼或"泉州本地宝"公众号回复【演出】进官方入口，<b>现在就能买，国庆手慢无</b>；无老人儿童优惠</li>
+<li>为什么不看梨园戏整本：闽南语 2–3 小时节奏慢，孩子坐不住；白天府文庙广场免费展演顺路听一折即可</li>
+<li>兜底：孩子坐不住就换<b>金鱼巷南音阁</b>（免费茶座、随进随出，步行 10 分钟）</li>
+</ul>
+<div class="src">出处：<a href="https://www.sohu.com/a/1078248754_121124406">2026-09-19 官宣排期票价</a> · <a href="https://m.dianping.com/shop/9844635">大众点评售票页</a> · <a href="https://www.qzwb.com/gb/content/2026-09/22/content_9253480.htm">泉州网戏剧周报道</a></div>
+</div>
+
+<!-- ============ D4 ============ -->
+<h2 class="day" id="d4">D4 · 10/4（周日）泉州博物馆 → 东山岛</h2>
+<p class="daysub">上午泉州博物馆（你们没去过，安排！）→ 10:15 出发 · ⚠️ 当日小雨，博物馆正好躲雨</p>
+
+<div class="card"><h3>当日动线</h3><div class="route">
+  <div class="rnode"><div class="rdot">①</div><span>7:30 早餐</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">②</div><span>9:00 泉州<br>博物馆</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">③</div><span>10:15 出发<br>G15 南下</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">④</div><span>13:30 铜陵<br>午餐</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑤</div><span>入住<br>午休</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑥</div><span>南门湾<br>日落</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑦</div><span>晚餐<br>海边散步</span></div>
+</div></div>
+
+<div class="card">
+<h3>🏛 上午 · 泉州博物馆（9:00–10:00）</h3>
+<ul>
+<li><span class="time">7:30</span>民宿附近早餐 → 收拾行李装车（开元盛世停车场取车）</li>
+<li><span class="time">8:50</span>到<b>泉州博物馆</b>（西湖公园北侧，古城北约 3km，开车 10 分钟），9:00 开门第一批进</li>
+<li>看"泉州历史文化陈列"+闽南建筑展，1 小时精华逛法——把昨天看到的开元寺、清净寺、天后宫串成完整的"宋元东方第一大港"故事</li>
+<li>⚠️ <b>需提前在"泉州市博物馆"公众号预约</b>（10/3 前约好 10/4 上午场）</li>
+<li><span class="time">10:15</span>出发上高速，沈海→东山联络线约 3.5h。⚠️ 预报小雨：车速放慢、车距拉大，按 4 小时留量；联络线红堵就走常山/云霄出口 G228 大产大桥进岛</li>
+</ul>
+<div class="src">出处：<a href="https://news.qq.com/rain/a/20250930A08CRH00">腾讯新闻（国庆开放与预约）</a> · <a href="http://qz.bendibao.com/tour/20241211/32783.shtm">泉州本地宝</a></div>
+</div>
+
+<div class="card">
+<h3>🍽 午餐 13:30 · 到铜陵镇后三选一</h3>
+<div class="opt"><b>① 旧戏院猫仔粥（铜陵旧戏院小吃城）</b><span class="badge ok">✅ 首选</span><div class="meta">人均 24 · 猫仔粥、鱼丸汤 · 粥品热乎舒服 · 差评仅"除猫仔粥外其他一般"</div>
+<div class="src">出处：<a href="https://m.dianping.com/ugcdetail/147127222">大众点评实评</a></div></div>
+<div class="opt"><b>② 东山兄弟海鲜饭店</b><span class="badge warn">⚠️ 到店看观感</span><div class="meta">每菜 ≤40 元出餐快；观感不佳换隔壁有财海鲜小炒</div></div>
+<div class="opt"><b>③ 阿芳卤面（团结路）</b><span class="badge warn">⚠️ 到店复核</span><div class="meta">30 年老店 · 人均约 15</div></div>
+</div>
+
+<div class="card">
+<h3>下午到晚上（节奏放慢）</h3>
+<ul>
+<li><span class="time">14:30</span>民宿入住（顶街，免费停车场）→ 午休/自由活动，想在房间歇的就歇</li>
+<li><span class="time">15:45–17:15</span>（可选）<b>风动石景区</b>：45 元，<b>60+ 免票</b>，仅 2 大 1 小购票（2 成人飞猪线上买 40.5 元起）；全程步行 1.8km 无观光车，走不动的看入口段（风动石本体+关帝庙，路平）就原路回。⚠️ 雨天石板滑；不想动的就民宿休息、顶街逛老店</li>
+<li><span class="time">17:30</span><b>南门湾看日落</b>（民宿步行 639 米；周边 8:30–22:00 交通管制，车留民宿；雨天看不成日落就顶街喝茶）</li>
+<li><span class="time">18:30</span>看完日落去吃晚餐 → 饭后海边/南门湾沙滩散步消食 → 22:30 前回</li>
+</ul>
+</div>
+
+<div class="pic"><img src="images/fengdongshi.jpg" alt="东山风动石"><div class="piccap">东山风动石·"天下第一奇石"，200 吨巨石接触面仅十余寸，风吹石动（图：Wikimedia Commons）</div></div>
+<div class="pic"><img src="images/nanmen_wan.jpg" alt="东山岛南门湾"><div class="piccap">南门湾全景·电影《左耳》取景地（图：Wikimedia Commons）</div></div>
+
+<div class="card">
+<h3>🍽 晚餐 18:30 · 三选一（海鲜正餐）</h3>
+<div class="opt"><b>① 旺来排档（南门湾侧）</b><span class="badge ok">✅ 首选</span><div class="meta">人均约 100 · 8 人 800–1000（不点龙虾膏蟹可控）· 两轮宰客搜索无实锤 · 差评仅"排队久、不好停车"</div>
+<div class="src">出处：<a href="https://www.xiaohongshu.com/discovery/item/669741df0000000025017a14">小红书四人实付&lt;250 实帖</a> · <a href="https://m.dianping.com/discovery/2091091432">大众点评</a></div></div>
+<div class="opt"><b>② 祥来排档（铜陵）</b><span class="badge ok">✅</span><div class="meta">人均 50–80 · 本地人多上菜快 · 差评是"服务粗糙"（排档通病）</div>
+<div class="src">出处：<a href="https://tw.trip.com/moments/detail/dongshan-county-2662-141046579">Trip 2026-01</a> · <a href="https://m.mafengwo.cn/gonglve/ziyouxing/406580">马蜂窝攻略</a></div></div>
+<div class="opt"><b>③ 有财海鲜小炒（南门湾附近）</b><span class="badge ok">✅</span><div class="meta">人均 40–50 · 本地回头客店 · 8 人 350–400 即够</div>
+<div class="src">出处：<a href="https://post.smzdm.com/p/az8k8l70">什么值得买 2026-07</a></div></div>
+</div>
+
+<div class="tip danger"><b>海鲜纪律（任何店通用）：</b>时价下单前问清单价写在单上 · 活鲜看着称重 · 拒绝路边拉客 · 保留小票。想吃活鱼活蟹就单点，团购套餐多为冻鲜友好菜。</div>
+
+<!-- ============ D5 ============ -->
+<h2 class="day" id="d5">D5 · 10/5（周一）东山岛 → 潮州</h2>
+<p class="daysub">苏峰山赶早 · 12:45 离岛 · 广济桥灯光秀 · ⚠️ 冷空气降温 4–6℃，备薄外套</p>
+
+<div class="card"><h3>当日动线</h3><div class="route">
+  <div class="rnode"><div class="rdot">①</div><span>7:30 早餐<br>阿强猫仔粥</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">②</div><span>8:00 苏峰山<br>第一波</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">③</div><span>10:00 马銮湾<br>沙滩</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">④</div><span>11:30 西埔<br>午餐</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑤</div><span>15:15 潮州<br>入住</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑥</div><span>17:30 拆桥<br>+晚餐</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑦</div><span>20:00<br>灯光秀</span></div>
+</div></div>
+
+<div class="pic"><img src="images/guangji_qiao.jpg" alt="潮州广济桥"><div class="piccap">广济桥（湘子桥）·南宋始建的启闭式浮桥，与赵州桥、洛阳桥、卢沟桥并称四大古桥（图：Wikimedia Commons）</div></div>
+
+<div class="card">
+<h3>时间轴</h3>
+<ul>
+<li><span class="time">5:40</span>日出组自愿出发金銮湾（车程 15 分钟），6:40 回——自愿参加，不起的睡到早餐</li>
+<li><span class="time">7:30</span>早餐：<b>阿强猫仔粥</b>（顶街民宿楼下，30 年老店 ✅审核通过）+ 铜陵人民市场烧腱灵摊</li>
+<li><span class="time">8:00</span><b>苏峰山环岛路第一波</b>：自驾车不能上山，停南/北停车场换接驳车（10 元/人），蓝桥打卡，<b>9:30 前下山</b>避开接驳排队。⚠️ 早晨若有雷阵雨就砍掉，睡够直接走 <a href="https://live.16fan.com/info/386317.html">东山文旅公告</a></li>
+<li><span class="time">10:00–11:15</span><b>马銮湾</b>玩沙（唯一有救生员的正规浴场；降温后水温约 25℃，下水看孩子体感）</li>
+<li><span class="time">11:30</span>西埔镇午餐：<b>向阳饭店</b>（✅本地人认可但来源偏旧，到店复核）</li>
+<li><span class="time">12:45</span>出发去潮州，约 <span class="time">15:15</span>到</li>
+<li><span class="time">15:30</span>车停<b>开元广场停车场</b>（民宿前台 15322703333 指引）；<b>太平路 9:00–23:00 禁行一切车辆</b>，先在"潮州交警"公众号做古城预约 <a href="https://www.163.com/dy/article/L80MLSU60530QLUU.html">管制通告</a></li>
+<li><span class="time">16:15–17:10</span>开元寺（17:00 前赶得上就进）→ 甲第巷 → 牌坊街北段</li>
+<li><span class="time">17:30</span>江边看"过河拆桥"（浮桥收桥，白天连成桥、晚上拆开让船过，四大古桥里唯一的启闭式）</li>
+<li><span class="time">17:45–19:30</span>晚餐</li>
+<li><span class="time">19:40</span>下水门城楼对面滨江长廊占机位 → <span class="time">20:00</span><b>广济桥灯光秀</b>（约 10 分钟）<a href="https://epaper.oeeee.com/epaper/A/html/2024-02/11/content_2669.htm">南都：最佳观赏点报道</a></li>
+<li><span class="time">20:15</span>牌坊街亮灯夜游回民宿，顺路夜宵：<b>七丛松甘草水果</b>（营业到 23:30）；胡荣泉鸭母捻打卡一碗即可（口味下滑，别多点）</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🍽 潮州晚餐 · 三选一（17:45 入座）</h3>
+<div class="opt"><b>① 官塘潮府陈牛肉火锅（古城店，上东平路 156 号）</b><span class="badge ok">✅ 新晋首选</span>
+<div class="meta">民宿步行约 10 分钟 · 人均 33–70 · 8 人约 500–600 · 自家屠宰场每日三次明档现切 · 高德状元榜 4.69</div>
+<div class="src">出处：<a href="https://m.dianping.com/ugcdetail/242987551?bizType=29&msource=baiduappugc&sceneType=0">大众点评本地人实测</a> · <a href="https://www.amap.com/ranking/chaozhou/select-hotel">高德状元榜</a></div></div>
+<div class="opt"><b>② 尚如坊潮州菜（启慧楼店，永护路 56 号）</b><span class="badge ok">✅ 不吃火锅选它</span>
+<div class="meta">人均约 113 · 8 人约 900 贴预算上限 · 南姜焗虾、卤水拼盘、水鸭汤 · 有 20 人包厢+停车位 · <b>须提前订包厢 0768-2233113</b></div>
+<div class="src">出处：<a href="https://you.ctrip.com/food/467/77725165.html">携程页（现点现炒非预制）</a></div></div>
+<div class="opt"><b>③ 阿彬牛肉火锅（广济桥店）</b><span class="badge no">⬇️ 已降级</span>
+<div class="meta">降级原因：2025-01 市监局通报牛肉丸检出鸡源性成分被召回 + 差评"价贵质次"。若坚持用：只点套餐、17:00 前入座</div>
+<div class="src">出处：<a href="https://3w.huanqiu.com/a/fa626f/4L4VlteXpcG">环球网召回通报</a></div></div>
+</div>
+
+<div class="tip"><b>广济桥门票：</b>20 元/人，60+ 半价、70+ 免票、学生半价、1.2m 以下免——全团登桥约 90–100 元。但国庆上桥排队 1–2 小时级，<b>建议江边看即可</b>；要上也须"一票潮州"小程序提前预约。</div>
+<div class="pic"><img src="images/paifang_jie.jpg" alt="潮州牌坊街"><div class="piccap">潮州牌坊街（图：Wikimedia Commons）</div></div>
+
+<!-- ============ D6 ============ -->
+<h2 class="day" id="d6">D6 · 10/6（周二）潮州 → 南澳岛</h2>
+<p class="daysub">预约核验入岛 · 北线小环 · 后宅海鲜</p>
+
+<div class="card"><h3>当日动线</h3><div class="route">
+  <div class="rnode"><div class="rdot">①</div><span>7:30 潮州<br>出发</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">②</div><span>8:45 莱芜湾<br>核验</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">③</div><span>10:00 过大桥<br>入岛</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">④</div><span>11:30 午餐<br>后宅</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑤</div><span>总兵府<br>金银岛</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑥</div><span>青澳湾<br>日落</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑦</div><span>19:00 晚餐</span></div>
+</div></div>
+
+<div class="pic"><img src="images/nanao_bridge.jpg" alt="南澳大桥"><div class="piccap">南澳大桥·11.9 公里跨海长龙（图：Wikimedia Commons）</div></div>
+
+<div class="card">
+<h3>时间轴</h3>
+<ul>
+<li><span class="time">7:30</span>潮州出发（民宿肠粉早餐 7:30 开餐需前一晚约，或兴记粿汁 7:00 开门 ⚠️ 国庆营业未核实）</li>
+<li><span class="time">8:45</span>到<b>莱芜湾欢乐世界 A 区停车场</b>：走东海岸大道<b>左侧两条预约车道</b>，提前打开预约二维码，闸机自动识别车牌，预留 30–60 分钟核验排队 <a href="https://www.dutenews.com/n/article/60099547">官方核验流程</a></li>
+<li><span class="time">10:00</span>过南澳大桥 → <span class="time">10:40</span>玉珑湾放行李</li>
+<li><span class="time">11:30</span>午餐 → <span class="time">13:00–14:00</span>午休</li>
+<li><span class="time">14:00–18:20</span>北线小环：<b>总兵府</b>（13 元，明清南澳总兵驻地进行地，平地院落最轻松，院里有郑成功招兵树，60+ 半价/70+ 免）→ <b>金银岛</b>（6 元，礁石台阶量力而行，30–40 分钟）→ <b>青澳湾+北回归线广场</b>（沙滩平缓 2400 米，孩子踩水；10 月风浪大别下海游泳）看日落</li>
+<li><span class="time">19:00</span>晚餐 → <span class="time">21:00</span>便利店买次日干粮（防早餐排队耽误出岛）</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🍽 午餐 · 二选一</h3>
+<div class="opt"><b>① 锋味十足海鲜小炒（后宅环城东路）</b><span class="badge ok">✅ 首选</span><div class="meta">人均 60–80 · 8 人约 600 · 椒盐皮皮虾、姜葱炒蟹 · 镇店非网红，排队压力小</div>
+<div class="src">出处：<a href="https://m.douban.com/group/topic/286700743/">豆瓣本地推荐</a> · <a href="https://www.163.com/dy/article/KCIF6CG20556DDKL.html">网易游记实吃</a></div></div>
+<div class="opt"><b>② 许大姐的菜（青澳湾北回归线广场旁）</b><span class="badge ok">✅ 直奔青澳湾选它</span><div class="meta">人均 70–90 · 紫菜炒饭、海胆炒饭 · 明码标价多源印证 · ⚠️ 有两家同名店，认准广场旁这家</div>
+<div class="src">出处：<a href="https://you.ctrip.com/food/958/12883223.html">携程点评页</a></div></div>
+</div>
+
+<div class="card">
+<h3>🍽 晚餐 19:00 · 后宅海滨路（现场核实制）</h3>
+<div class="opt"><b>① 渔香餐厅（玉珑湾楼下 250–450 米）</b><span class="badge warn">⚠️ 降级备选</span><div class="meta">位置最近、携程 5.0；但 2021 攻略黑榜有"渔香饭店"名称近似未证实——<b>进店先看海鲜池明码标价，不清楚就换下一家</b></div></div>
+<div class="opt"><b>② 聚鲜海鲜大排档（海滨广场 B 栋 111）</b><span class="badge warn">⚠️ 单一来源</span><div class="meta">携程游记称"明码标价不宰客"，同样现场核实</div></div>
+<div class="opt"><b>③ 裕禧记海鲜蒸汽火锅（距房源约 291 米）</b><span class="badge ok">✅ 保底</span><div class="meta">人均约 94 · 蒸汽活鲜现蒸看得见 · 8 人约 700–750 · 前两家存疑就退这家</div></div>
+<div class="src">执行方式：中午吃锋味十足时向老板/民宿前台核实渔香、聚鲜当日价目；海鲜纪律同 D4。<a href="http://www.xinhuanet.com/comments/20250707/62378e36f3a443acad1782ce71696eb3/c.html">反面教材：海上渔村 318 元套餐变 2297 被查封（新华网）</a></div>
+</div>
+
+<div class="tip danger"><b>岛内管制：</b>10/1–10/7 全岛"南进北出"单向管制（8:00–23:30）：<b>隆长线=进岛方向、西长线=出岛方向</b>。10/7 出岛必须走西长线上桥，别走反。<a href="https://feng.ifeng.com/c/8wnBWmkYoEB">2026 国庆管制通告</a></div>
+
+<!-- ============ D7 ============ -->
+<h2 class="day" id="d7">D7 · 10/7（周三）南澳岛 → 汕头老城 → 家</h2>
+<p class="daysub">6:30 起床 · 7:30 前出岛 · 汕头老城玩半天 · 12:30 还车死线 · 14:03 高铁</p>
+
+<div class="card"><h3>当日动线</h3><div class="route">
+  <div class="rnode"><div class="rdot">①</div><span>6:30 起床<br>7:30 出岛</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">②</div><span>8:15 过大桥</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">③</div><span>9:00 西堤公园<br>小公园老城</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">④</div><span>11:00 福合埕<br>午餐</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑤</div><span>12:15 汕头站<br>还车</span></div><div class="rarrow">→</div>
+  <div class="rnode"><div class="rdot">⑥</div><span>14:03 G6309<br>回家</span></div>
+</div></div>
+
+<div class="pic"><img src="images/shantou_park.jpg" alt="汕头老城骑楼"><div class="piccap">汕头小公园开埠区骑楼（图：Wikimedia Commons）</div></div>
+<div class="story"><b>📖 小公园开埠区：</b>汕头 1860 年开埠后的老心脏，南洋骑楼群围着中山纪念亭放射排开，是大陆最大规模的民国骑楼群之一。侨批文物馆里的"侨批"（华侨寄回家的信+汇款单）是潮汕人下南洋百年的血泪与牵挂，值得带孩子看。</div>
+
+<div class="card">
+<h3>时间轴（环环相扣，别拖）</h3>
+<ul>
+<li><span class="time">6:30</span>起床</li>
+<li><span class="time">6:50</span>早餐：<b>炳忠粿条面</b>（后宅隆澳路 54 号，6:00 开门 ✅两源确认）或昨晚干粮，<b>7:25 前吃完</b></li>
+<li><span class="time">7:30</span>出发出岛，走<b>西长线</b> → <span class="time">8:15</span>前过南澳大桥（历年规律：早 9 点前出岛畅通，16 点后排队 1–2 小时）</li>
+<li><span class="time">9:00</span>到汕头市区，车停<b>西堤停车场</b>（9/25–10/31 小公园片区多路单行/禁行，官方指定停车场；行李留车里）<a href="https://feng.ifeng.com/c/8wjlYPOs0Op">2026 管制通告</a></li>
+<li><span class="time">9:00–9:50</span><b>西堤公园</b>（全天免费，看礐石大桥海景+侨批主题）→ <b>老妈宫+戏台</b> → <b>中山纪念亭+骑楼群+汕头旅社</b>（开放式街区，上午人少先逛）</li>
+<li><span class="time">9:50</span><b>开埠文化陈列馆</b>（永平路 1 号，假日 9:00–17:30 免费）→ <span class="time">10:20</span><b>邮政总局旧址</b>（大清邮局，免费）→ <span class="time">10:40</span><b>侨批文物馆</b>（外马路 18 号，免费；周三上午开，去前可打 0754-88280066 确认）</li>
+<li><span class="time">11:00–11:50</span>午餐：<b>福合埕牛肉丸（福平路店）</b>✅ 五角色审核通过——老字号、10:30 开门正好早午餐、8 人火锅 600–900；11 点前到避排队。⚠️ 只进这种老店，小公园景区里无名小吃店有"分量少、照宰"吐槽 <a href="https://cn.tripadvisor.com/Restaurant_Review-g297414-d6354294-Reviews-Fu_He_Cheng_NiuRouWan_Fu_Ping_Road-Shantou_Guangdong.html">Tripadvisor</a> · <a href="https://m.dianping.com/ugcdetail/158983189?bizType=29">大众点评本地人帖</a></li>
+<li><span class="time">11:50</span><b>必须结账离场</b>（福平路→汕头站约 7km/20 分钟）</li>
+<li><span class="time">12:15–12:30</span>到汕头站还车（死线；验车+自助还车留 30 分钟，国庆末日可能排队）</li>
+<li><span class="time">13:00</span>进站安检（2025/10/8 汕头站发送 5.2 万人次，留足排队时间）→ <span class="time">14:03</span><b>G6309 开</b></li>
+</ul>
+<div class="tip"><b>上车前交代：</b>李清一家 07 车到衡阳东 19:36；爷爷奶奶 14 车到长沙南 20:23；外公外婆 07 车到郴州西 19:02（<b>上车后主动找列车员补票到衡阳东</b>）。两家老人不在一节车厢，各带好自己的票。</div>
+</div>
+
+<!-- ============ 订座清单 ============ -->
+<h2 class="day" id="todo">📋 订座与预约总清单</h2>
+<div class="card">
+<table>
+<tr><th>事项</th><th>电话/渠道</th><th>什么时候办</th></tr>
+<tr><td>福州卓悦酒店两台车停车位</td><td>18050302909</td><td>9/28 前</td></tr>
+<tr><td>10/1 晚餐订座（王庄阿咪/山海南筵/闽府佳宴三选一定下后）</td><td>0591-83385888 / 0591-83837333 / 18597771918</td><td>9/28 前</td></tr>
+<tr><td>10/2 老福洲徐记 11:30 午市</td><td>0591-87736189 / 18150036189</td><td>9/30–10/1</td></tr>
+<tr><td>南音"偶"遇 10/3 晚 19:00 场 ×8（109 档拆 2 单）</td><td>"泉州本地宝"公众号回复【演出】/猫眼</td><td><b>现在就买</b></td></tr>
+<tr><td>泉州博物馆 10/4 上午场预约</td><td>"泉州市博物馆"公众号</td><td>10/3 前</td></tr>
+<tr><td>10/5 潮州古城车辆预约</td><td>"潮州交警"公众号 → 古城预约（14:00–20:00 时段）</td><td>10/4 前</td></tr>
+<tr><td>潮州晚餐（尚如坊包厢或潮府陈）</td><td>0768-2233113</td><td>10/4</td></tr>
+<tr><td>南澳畅行两台车入岛预约（10/6 上午）</td><td>"南澳畅行"微信小程序</td><td><b>10/1 提车拿到车牌当天</b></td></tr>
+<tr><td>广济桥若要登桥</td><td>"一票潮州"小程序</td><td>10/4 前</td></tr>
+<tr><td>木偶剧院（若加场）</td><td>"木偶剧院"微信小程序</td><td>10/2 前</td></tr>
+<tr><td>汕头侨批文物馆（可选确认）</td><td>0754-88280066</td><td>10/6</td></tr>
+</table>
+</div>
+
+<!-- ============ 省钱 ============ -->
+<h2 class="day" id="save">💰 省钱汇总</h2>
+<div class="card">
+<ul>
+<li><b>南音票：</b>买 109 档×8=872 元最省（双人套票反而贵）；<b>闲鱼明确不建议</b>——二维码核销制，一票两卖/假码骗局多发，为省几十元赌 872 元不值</li>
+<li><b>老人证件：</b>风动石 60+ 免票、广济桥 60+ 半价、总兵府/金银岛半价——身份证带齐，全程省约 300–400 元</li>
+<li><b>风动石门票：</b>2 成人飞猪线上买 40.5 元/人（门市 45），预订 1 小时后生效，到现场前买好</li>
+<li><b>潮州晚餐：</b>选官塘潮府陈（8 人 500–600）比阿彬省 150+，还避开召回污点</li>
+<li><b>团购原则：</b>入选的老字号小吃店（人均 15–36）无团购空间，直接点；结账前打开大众点评 App 看一眼"买单立减"；任何代金券<b>下单前看券面"节假日是否可用"</b>，国庆很多券不能用</li>
+<li><b>海鲜：</b>团购套餐多为冻鲜友好菜，想吃活鲜就海鲜池单点+看着称重——这不是省钱问题，是不被坑问题</li>
+<li><b>泉州免费展演：</b>府文庙广场戏剧周 36 场惠民演出免费（9/24–10/7），顺路听不花钱</li>
+<li><b>汕头 10/7 上午：</b>西堤公园、小公园骑楼、开埠文化陈列馆、邮政总局、侨批文物馆<b>全部免费</b></li>
+</ul>
+</div>
+
+<!-- ============ 台风预案 ============ -->
+<h2 class="day" id="typhoon">🌀 台风预案（10 月上旬仍是台风尾季）</h2>
+<div class="card">
+<ul>
+<li><b>当前信号（9/29 查）：</b>洋面台风趋向日本方向减弱，假期暂无影响闽粤的台风信号；但 7 月台风"红霞"曾致南澳大桥封桥（央视网报道），10 月不能掉以轻心</li>
+<li><b>10/4 起每天看</b>中央气象台台风路径 + "南澳大桥官微"（有桥区实时监控直播）+ 汕头预警</li>
+<li><b>封桥规则：</b>9 级风禁大巴、10 级及以上封桥；封桥预通告通常提前约 24 小时发布（2023 台风小犬：10/6 中午封桥、10/7 早 7 点解封，恰好压在你们的日期上）</li>
+<li><b>若预报 10/6–7 有 9–10 级风圈：</b>果断放弃进岛，潮州/汕头多住一天（广济桥、小公园、妈屿岛替代）</li>
+<li><b>若已进岛收到封桥预通告：</b>立即提前出岛，不要赌——莱长轮渡台风天同样停航，轮渡不是兜底</li>
+<li><b>G6309 预案：</b>封桥拖到 10/7 早上就改签；台风天高铁也可能停运，两手都查</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ============ 封底 ============ -->
+<section class="backcover">
+  <h2>一路平安 · 玩得尽兴</h2>
+  <p>本路书每条餐饮推荐均经五角色审核<br>（营销鉴别 / 评论深挖 / 本地人认可 / 家庭适配 / 国庆风险）<br>并附原始出处链接，可随时点开核实</p>
+  <p style="margin-top:18px">景点图：Wikimedia Commons ｜ 天气：中央气象台 / 中国天气网（2026-09-29 更新）<br>编制：2026 年 9 月 · 出发前 3 天请复核天气与管制通告</p>
+  <p style="margin-top:22px; font-size:16px; letter-spacing:2px"><b>国庆闽粤路书 · 家庭旅行专刊</b></p>
+</section>
+
+</body>
+</html>
